@@ -1,0 +1,11 @@
+[Plugin]
+Module=restore-tabs
+IAge=2
+Name=Restore Tabs 
+Version=v0.0.1
+Description=Xed porting of the Gedit restore-tabs plugin
+Comment=Xed porting of the Gedit restore-tabs plugin
+Icon=system-software-install
+Authors=Nicola "tudo75" Tudino
+Copyright=Copyright © 2022 Nicola "tudo75" Tudino
+Website=https://github.com/tudo75/xed-restore-tabs-plugin

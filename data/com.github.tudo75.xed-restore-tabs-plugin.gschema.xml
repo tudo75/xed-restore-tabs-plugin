@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+    <schema path="/com/github/tudo75/xed-restore-tabs-plugin/" 
+        id="com.github.tudo75.xed-restore-tabs-plugin">
+        <key name="uris" type="as">
+            <default>['']</default>
+            <summary>URI List</summary>
+            <description>A list of the URIs to restore when Xed is started.</description>
+        </key>
+
+        <!-- settings -->
+
+        <key name="enable-restore-tabs" type="b">
+            <default>true</default>
+            <summary>Enable Restore Tabs</summary>
+        </key>
+    </schema>
+</schemalist>
+

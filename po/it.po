@@ -1,0 +1,31 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.tudo75.xed-restore-tabs-plugin package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.tudo75.xed-restore-tabs-plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-27 12:48+0200\n"
+"PO-Revision-Date: 2022-06-27 12:49+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ..\n"
+"Last-Translator: Nicola Tudino <tudo75@gmail.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: it\n"
+"X-Poedit-SearchPath-0: data/restore-tabs-plugin.desktop.in\n"
+"X-Poedit-SearchPath-1: src/restore-tabs.vala\n"
+
+#: src/restore-tabs.vala:153
+msgid "<big>Xed RestoreTabs Plugin Settings</big>"
+msgstr "<big>Impostazioni di Xed Restore Tabs Plugin</big>"
+
+#: src/restore-tabs.vala:173
+msgid "Enable Restore Tabs"
+msgstr "Abilita Restore Tabs"
