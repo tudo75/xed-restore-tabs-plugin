@@ -120,6 +120,8 @@ namespace RestoreTabsPlugin {
                 if (window == widget) {
                     // Only restore tabs for the first window instance.
                     if (!TABS_LOADED) {
+                        GLib.Settings file_browser_settings = new GLib.Settings ("org.x.editor.plugins.filebrowser");
+                        file_browser_settings.set_boolean("open-at-first-doc", false);
                         GLib.Variant urisVariant = settings.get_value("uris");
                         VariantIter iter = urisVariant.iterator ();
                         string val = null;
@@ -130,6 +132,7 @@ namespace RestoreTabsPlugin {
                             }
                         }
                         TABS_LOADED = true;
+                        file_browser_settings.set_boolean("open-at-first-doc", true);
                     }
                 }
             }
