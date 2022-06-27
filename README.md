@@ -36,6 +36,8 @@ To uninstall and remove all added files, go inside the cloned folder and:
 ## Instructions
 Plugin must be enabled from Settings -> Plugin
 
+Pay attention if you have more than one working window open. Plugin restore the list of opened files only for last closed window.
+
 ## Credits
 
 Based on this Gedit Plugin
