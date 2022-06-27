@@ -34,7 +34,7 @@ To uninstall and remove all added files, go inside the cloned folder and:
     sudo rm /usr/share/locale/it/LC_MESSAGES/com.github.tudo75.xed-restore-tabs-plugin.mo
 
 ## Instructions
-Plugin must be enabled from Settings -> Plugin
+Plugin must be enabled from Edit -> Preferences -> Plugins -> Restore Tabs
 
 Pay attention if you have more than one working window open. Plugin restore the list of opened files only for last closed window.
 
