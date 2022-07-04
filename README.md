@@ -19,9 +19,11 @@ To install on Ubuntu based distros:
     sudo apt install meson ninja-build build-essential valac cmake libgtk-3-dev libpeas-dev xed-dev libxapp-dev
 
 ## Install
-Enter the cloned folder and:
+Clone the repository and from inside the cloned folder:
 
-    meson setup build --prefix=/usr
+    git clone https://github.com/tudo75/xed-restore-tabs-plugin.git
+	cd xed-restore-tabs-plugin
+	meson setup build --prefix=/usr
     ninja -v -C build com.github.tudo75.xed-restore-tabs-plugin-gmo
     ninja -v -C build
     ninja -v -C build install
