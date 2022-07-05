@@ -11,12 +11,13 @@ To compile some libraries are needed:
 * libpeas-gtk-1.0
 * libglib2.0-dev
 * libgtk-3-dev
+* libgtksourceview-4-dev
 * libxapp-dev
 * xed-dev
 
 To install on Ubuntu based distros:
 
-    sudo apt install meson ninja-build build-essential valac cmake libgtk-3-dev libpeas-dev xed-dev libxapp-dev
+    sudo apt install meson ninja-build build-essential valac cmake libgtk-3-dev libpeas-dev xed-dev libxapp-dev libgtksourceview-4-dev
 
 ## Install
 Clone the repository and from inside the cloned folder:
