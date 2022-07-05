@@ -105,11 +105,9 @@ namespace RestoreTabsPlugin {
                             uris += doc.get_file().get_location().get_uri();
                         }
                     }
-                    if (uris != null && uris.length > 0) {
-                        GLib.Variant urisVariant = new GLib.Variant.strv(uris);
-                        // print ("RestoreTabsWindow -> settings.set_value; uris.length: " + uris.length.to_string() + "\n");
-                        settings.set_value("uris", urisVariant);
-                    }
+                    // save an empty array if all tabs were closed, otherway an array with all the current open tabs
+                    GLib.Variant urisVariant = new GLib.Variant.strv(uris);
+                    settings.set_value("uris", urisVariant);
                 }
             }
             return false; // false to propagate the delete_event as usually
