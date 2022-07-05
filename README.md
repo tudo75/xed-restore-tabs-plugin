@@ -46,3 +46,10 @@ Pay attention if you have more than one working window open. Plugin restore the 
 Based on this Gedit Plugin
 
 https://github.com/Quixotix/gedit-restore-tabs
+
+## My Xed Plugins
+* xed-terminal-plugin https://github.com/tudo75/xed-terminal-plugin
+* xed-codecomment-plugin https://github.com/tudo75/xed-codecomment-plugin
+* xed-sessionsaver-plugin https://github.com/tudo75/xed-sessionsaver-plugin
+* xed-restore-tabs-plugin https://github.com/tudo75/xed-restore-tabs-plugin
+* xed-plantuml-plugin https://github.com/tudo75/xed-plantuml-plugin 
