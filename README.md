@@ -20,6 +20,8 @@ To install on Ubuntu based distros:
     sudo apt install meson ninja-build build-essential valac cmake libgtk-3-dev libpeas-dev xed-dev libxapp-dev libgtksourceview-4-dev
 
 ## Install
+On Mint/LMDE you can use the provided deb package (maybe works also for Ubuntu 20.04  but not tested)
+
 Clone the repository and from inside the cloned folder:
 
     git clone https://github.com/tudo75/xed-restore-tabs-plugin.git
