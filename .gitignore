@@ -20,6 +20,13 @@ stamp-h1
 *.pc
 .tarball-version
 .version
+debian/build
+debian/tmp
+debian/xed-restore-tabs-plugin
+debian/.debhelper
+debian/xed-restore-tabs-plugin.substvars
+debian/xed-restore-tabs-plugin.debhelper.log
+debian/files
 
 *.gcda
 *.gcno

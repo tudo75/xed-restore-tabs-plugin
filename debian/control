@@ -1,0 +1,21 @@
+Source: xed-restore-tabs-plugin
+Section: x11
+Priority: optional
+Maintainer: Nicola tudo75 Tudino <tudo75@hotmail.com>
+Build-Depends: debhelper (>= 9),
+               meson,
+               dh-python,
+               gnome-common,
+               gnome-pkg-tools,
+               gobject-introspection (>= 0.9.12-4~),
+               intltool (>= 0.40.0),
+               libgirepository1.0-dev (>= 0.10.7-1~),
+               libglib2.0-dev (>= 2.30.0)
+Standards-Version: 3.9.5
+X-Python3-Version: >= 3.1
+
+Package: xed-restore-tabs-plugin
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: xed-restore-tabs-plugin vala
+ xed-restore-tabs-plugin vala.

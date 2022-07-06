@@ -1,7 +1,7 @@
 /*
  * restore-tabs.vala
  *
- * Copyright 2021 Nicola Tudino
+ * Copyright 2022 Nicola Tudino
  *
  * This file is part of xed-restore-tabs-plugin.
  *
