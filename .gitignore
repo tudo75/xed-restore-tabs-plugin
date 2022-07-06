@@ -6,6 +6,7 @@ restore-tabs
 *.pot
 *.mo
 *.deb
+*.ddeb
 
 build
 config.*
