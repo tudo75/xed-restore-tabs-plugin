@@ -72,6 +72,7 @@ namespace RestoreTabsPlugin {
         private static bool TABS_LOADED = false;
         private GLib.Settings settings = new GLib.Settings ("com.github.tudo75.xed-restore-tabs-plugin");
         private uint n_tabs = 0;
+        private ulong tab_close_handler_id;
 
         public RestoreTabsWindow () {
             GLib.Object ();
@@ -116,7 +117,8 @@ namespace RestoreTabsPlugin {
             return false; // false to propagate the delete_event as usually
         }
 
-        public void on_window_show(Gtk.Widget widget) {
+        public void on_window_show(Gtk.Widget widget) 
+        {
             if (this.settings.get_boolean ("enable-restore-tabs")) {
                 if (window == widget) {
                     // Only restore tabs for the first window instance.
@@ -138,9 +140,10 @@ namespace RestoreTabsPlugin {
                     }
                 }
             }
-            if (TABS_LOADED) {
+            if (TABS_LOADED)
+            {
                 // handler to catch the Untitled Document tab
-                window.tab_added.connect (this.on_tab_added);
+                tab_close_handler_id = window.tab_added.connect (this.on_tab_added);
             }
         }
 
@@ -150,6 +153,7 @@ namespace RestoreTabsPlugin {
 
             if (document.get_file ().get_location () == null && window.get_documents ().length () > n_tabs) {
                 window.close_tab (tab);
+                window.disconnect (tab_close_handler_id);
             } 
         }
     }

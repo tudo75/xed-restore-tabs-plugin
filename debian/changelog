@@ -1,3 +1,9 @@
+xed-restore-tabs-plugin (0.0.3) una; urgency=medium
+
+  * Fix for closing Untitled Document in all new windows.
+
+ -- tudo75 <tudo75@users.noreply.github.com>  Sat, 29 Mar 2025 20:45:45 +0000
+
 xed-restore-tabs-plugin (0.0.2) una; urgency=medium
 
   * Fix for Untitled Document opening..

@@ -1,5 +1,5 @@
 # project name and programming language
-project('com.github.tudo75.xed-restore-tabs-plugin', ['vala', 'c'], version: '0.0.2')
+project('com.github.tudo75.xed-restore-tabs-plugin', ['vala', 'c'], version: '0.0.3')
 
 assert('com.github.tudo75.xed-restore-tabs-plugin.gschema.xml'==meson.project_name() + '.gschema.xml', 'proj name and gschema file not the same')
 

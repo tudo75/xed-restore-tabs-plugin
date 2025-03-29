@@ -2,7 +2,7 @@
 Module=restore-tabs
 IAge=2
 Name=Restore Tabs 
-Version=v0.0.1
+Version=v0.0.3
 Description=Xed porting of the Gedit restore-tabs plugin
 Comment=Xed porting of the Gedit restore-tabs plugin
 Icon=system-software-install
