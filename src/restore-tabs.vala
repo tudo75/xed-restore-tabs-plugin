@@ -41,7 +41,8 @@ namespace RestoreTabsPlugin {
     /*
     * AppActivatable
     */
-    public class RestoreTabsApp : Xed.AppActivatable, Peas.ExtensionBase {
+    public class RestoreTabsApp : Xed.AppActivatable, Peas.ExtensionBase
+    {
 
 
         public RestoreTabsApp () {
@@ -65,10 +66,12 @@ namespace RestoreTabsPlugin {
     /*
     * WindowActivatable
     */
-    public class RestoreTabsWindow : Xed.WindowActivatable, Peas.ExtensionBase {
+    public class RestoreTabsWindow : Xed.WindowActivatable, Peas.ExtensionBase
+    {
         
         private static bool TABS_LOADED = false;
         private GLib.Settings settings = new GLib.Settings ("com.github.tudo75.xed-restore-tabs-plugin");
+        private uint n_tabs = 0;
 
         public RestoreTabsWindow () {
             GLib.Object ();
@@ -127,6 +130,7 @@ namespace RestoreTabsPlugin {
                             GLib.File location = GLib.File.new_for_uri(val);
                             if (location != null) {
                                 window.create_tab_from_location(location, null, 0, false, true);
+                                n_tabs++;
                             }
                         }
                         TABS_LOADED = true;
@@ -134,6 +138,19 @@ namespace RestoreTabsPlugin {
                     }
                 }
             }
+            if (TABS_LOADED) {
+                // handler to catch the Untitled Document tab
+                window.tab_added.connect (this.on_tab_added);
+            }
+        }
+
+        public void on_tab_added (Xed.Window window, Xed.Tab tab) {
+            // print ("Tab added\n");
+            Xed.Document document = tab.get_document ();
+
+            if (document.get_file ().get_location () == null && window.get_documents ().length () > n_tabs) {
+                window.close_tab (tab);
+            } 
         }
     }
 
